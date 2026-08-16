@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spiggle Plugins — Dynamic Fields &amp; Form Builder</title>
+  <meta name="description" content="Marketing sites and guides for Spiggle Dynamic Fields and Spiggle Form Builder — Laravel + Filament plugins.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dynamic-fields/site.css">
+  <style>
+    .hub-hero { padding: 72px 0 48px; }
+    .hub-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: 40px 0 64px;
+    }
+    .hub-card {
+      background: var(--navy-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .hub-card h2 { font-family: var(--display); margin: 0 0 12px; font-size: 1.6rem; }
+    .hub-card p { color: var(--muted); margin: 0 0 20px; }
+    .hub-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="./">Spiggle <span>Plugins</span></a>
+      <nav aria-label="Primary">
+        <a href="dynamic-fields/">Dynamic Fields</a>
+        <a href="form-builder/">Form Builder</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hub-hero">
+      <div class="container">
+        <p class="eyebrow">Laravel + Filament</p>
+        <h1>Spiggle Plugins</h1>
+        <p class="lede">Product sites and guides for the Spiggle plugin family. Package source stays in private repositories; this site is documentation only.</p>
+        <div class="hub-grid">
+          <article class="hub-card">
+            <h2>Dynamic Fields</h2>
+            <p>EAV custom fields for any Eloquent model — Filament UI, typed values, files, and seed/verify tooling.</p>
+            <div class="hub-actions">
+              <a class="btn btn-amber" href="dynamic-fields/">Visit site</a>
+              <a class="btn btn-ghost" href="dynamic-fields/guide/">Guide</a>
+            </div>
+          </article>
+          <article class="hub-card">
+            <h2>Form Builder</h2>
+            <p>Build, publish, and capture public forms — wizards, tabs, submissions inbox, and CSV/Excel/PDF export.</p>
+            <div class="hub-actions">
+              <a class="btn btn-amber" href="form-builder/">Visit site</a>
+              <a class="btn btn-ghost" href="form-builder/guide/">Guide</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Spiggle</div>
+      <nav aria-label="Footer">
+        <a href="dynamic-fields/">Dynamic Fields</a>
+        <a href="form-builder/">Form Builder</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
